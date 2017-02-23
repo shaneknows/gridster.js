@@ -1,6 +1,11 @@
-/*! gridster.js - v0.5.6 - 2014-09-25
+/**
+ * Extended by Shane Knowles 2-23-2017 to fix memory leaks when using the
+ * Resize option. See main gridster fn.destroy method for changes
+ * 
+! gridster.js - v0.5.6 - 2014-09-25
 * http://gridster.net/
-* Copyright (c) 2014 ducksboard; Licensed MIT */
+* Copyright (c) 2014 ducksboard; Licensed MIT 
+*/
 
 ;(function(root, factory) {
 
@@ -3963,6 +3968,12 @@
 
         if (this.drag_api) {
             this.drag_api.destroy();
+            this.drag_api = undefined;
+        }
+
+        if (this.resize_api) {
+            this.resize_api.destroy();
+            this.resize_api = undefined;
         }
 
         this.remove_style_tags();
