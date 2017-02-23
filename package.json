@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ducksboard/gridster.js.git"
+    "url": "git://github.com/shaneknows/gridster.js.git"
   },
   "bugs": {
-    "url": "https://github.com/ducksboard/gridster.js/issues"
+    "url": "https://github.com/shaneknows/gridster.js/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ducksboard/gridster.js/blob/master/LICENSE"
+      "url": "https://github.com/shaneknows/gridster.js/blob/master/LICENSE"
     }
   ],
   "keywords": [],
